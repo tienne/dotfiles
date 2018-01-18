@@ -49,9 +49,9 @@ done
 running "gitconfig"
 ok
 
-###############################################################################
-"Homebrew (CLI Packages), Caskroom"
-###############################################################################
+###
+bot "Homebrew (CLI Packages), Caskroom"
+###
 brew_bin=$(which brew) 2>&1 > /dev/null
 if [[ $? != 0 ]]; then
   running "homebrew 설치"
@@ -79,4 +79,50 @@ if [[ $? != 0 ]]; then
 fi
 running "Caskroom 업데이트"
 brew tap caskroom/versions > /dev/null 2>&1
+ok
+
+###
+bot "font install"
+###
+cd $DOTHOME && chmod +x ./fonts/install.sh
+./fonts/install.sh
+
+###
+bot "install Mac Os Apps"
+###
+icask google-chrome
+icask simplenote
+icask jandi
+icask slack
+icask trello
+
+###
+bot "docker"
+###
+icask docker
+icask docker-toolbox
+
+###
+bot "ide and dev tool"
+###
+icask sourcetree
+icask phpstorm
+icask visual-studio-code
+icask android-studio
+icask staruml
+icask iterm2
+icask sequel-pro
+
+###
+bot "Angular Development Environment setting"
+###
+ibrew node
+
+running "Angular install"
+npm install -g @angular/cli
+ok
+
+running "Set yarn default package manager"
+npm install -g yarn
+ng set -g packageManager=yarn
 ok
