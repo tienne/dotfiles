@@ -122,6 +122,14 @@ running "Angular install"
 npm install -g @angular/cli
 ok
 
+running "typescript install"
+npm install -g typescript
+ok
+
+running "gulp install"
+npm install -g gulp
+ok
+
 running "Set yarn default package manager"
 npm install -g yarn
 ng set -g packageManager=yarn
