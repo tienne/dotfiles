@@ -117,6 +117,7 @@ icask sequel-pro
 bot "Angular Development Environment setting"
 ###
 ibrew node
+ibrew yarn
 
 running "Angular install"
 npm install -g @angular/cli
