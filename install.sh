@@ -124,6 +124,7 @@ icask trello
 bot "composer install"
 ###
 curl -sS https://getcomposer.org/installer | sudo php -- --install-dir=/usr/local/bin/
+mv /usr/local/bin/composer.phar /usr/local/bin/composer
 ok
 
 ###
