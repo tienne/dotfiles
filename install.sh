@@ -50,6 +50,13 @@ running "gitconfig"
 ok
 
 ###
+bot "alias setting"
+###
+cp $DOTHOME/configs/.aliases $HOME/.aliases
+running "aliases"
+ok
+
+###
 bot "Homebrew (CLI Packages), Caskroom"
 ###
 brew_bin=$(which brew) 2>&1 > /dev/null
@@ -95,6 +102,12 @@ icask simplenote
 icask jandi
 icask slack
 icask trello
+
+###
+bot "composer install"
+###
+curl -sS https://getcomposer.org/installer | sudo php -- --install-dir=/usr/local/bin/
+ok
 
 ###
 bot "docker"
