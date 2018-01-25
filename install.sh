@@ -143,6 +143,7 @@ icask android-studio
 icask staruml
 icask iterm2
 icask sequel-pro
+icask mysqlworkbench
 
 ###
 bot "Angular Development Environment setting"
