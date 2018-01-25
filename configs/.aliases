@@ -1,2 +1,6 @@
-#composer
-alias composer="php /usr/local/bin/composer.phar"
+#laravel
+alias artisan="php artisan"
+alias tinker="php artisan tinker"
+
+#docker
+alias dc="docker-compose"

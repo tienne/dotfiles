@@ -1,0 +1,2 @@
+# php composer
+PATH="$PATH:$HOME/.composer/vendor/bin"
