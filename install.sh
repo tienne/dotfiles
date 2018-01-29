@@ -4,13 +4,16 @@ source ./command/echos.sh
 source ./command/installer.sh
 
 print "Dotfiles 설치를 시작합니다."
+print "설치를 하기 위해서는 password가 필요합니다."
 
-print "설치를 하기위해서 sudo 비밀번호가 필요합니다.\n"
-if ! sudo grep --silent 'Defaults !tty_tickets' /etc/sudoers; then
-  running "sudo tty_tickets 설정"
-  sudo bash -c 'echo "Defaults !tty_tickets" | (EDITOR="tee -a" visudo)'
-  ok
-fi
+sudo -v
+
+while true;
+do
+    sudo -n true
+    sleep 60
+    kill -0 "$$" || exit
+done &> /dev/null &
 
 DOTHOME="${1:-${PWD}}"
 rm -rf ./configs-custom
@@ -125,6 +128,13 @@ bot "composer install"
 ###
 curl -sS https://getcomposer.org/installer | sudo php -- --install-dir=/usr/local/bin/
 mv /usr/local/bin/composer.phar /usr/local/bin/composer
+sudo chmod +x /usr/local/bin/composer
+ok
+
+###
+bot "composer prestissimo install"
+###
+composer global require hirak/prestissimo
 ok
 
 ###
