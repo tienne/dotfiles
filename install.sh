@@ -150,7 +150,6 @@ icask sourcetree
 icask phpstorm
 icask visual-studio-code
 icask android-studio
-icask staruml
 icask iterm2
 icask sequel-pro
 icask mysqlworkbench
