@@ -176,3 +176,9 @@ running "Set yarn default package manager"
 npm install -g yarn
 ng set -g packageManager=yarn
 ok
+###
+bot ".DS_STORE file"
+###
+
+default write com.apple.desktopservices DSDontWriteNetworkStores true
+ok
