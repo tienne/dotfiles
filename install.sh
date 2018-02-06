@@ -148,8 +148,10 @@ ok
 ###
 bot "aws sdk install"
 ###
-pip install awsebcli --upgrade --ignore-installed six
-pip install awsebcli
+pip install awscli --upgrade --ignore-installed six
+pip install awscli
+pip install awsebcli --upgrade --user
+
 
 ###
 bot "docker"
