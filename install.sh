@@ -138,6 +138,20 @@ composer global require hirak/prestissimo
 ok
 
 ###
+bot "python install"
+###
+ibrew python
+ibrew python3
+easy_install pip
+ok
+
+###
+bot "aws sdk install"
+###
+pip install awsebcli --upgrade --ignore-installed six
+pip install awsebcli
+
+###
 bot "docker"
 ###
 icask docker
