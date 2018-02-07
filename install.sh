@@ -53,27 +53,11 @@ running "gitconfig"
 ok
 
 ###
-bot "alias setting"
-###
-cp $DOTHOME/configs/.aliases $HOME/.aliases
-source $HOME/.aliases
-running "aliases"
-ok
-
-###
 bot ".bash_profile"
 ###
-cp $DOTHOME/configs/.bash_profile $HOME/.bash_profile
+ln -nfs $DOTHOME/configs/.bash_profile $HOME/.bash_profile
 source $HOME/.bash_profile
 running "bash_profile"
-ok
-
-###
-bot ".path"
-###
-cp $DOTHOME/configs/.path $HOME/.path
-source $HOME/.path
-running "path"
 ok
 
 ###
@@ -192,9 +176,10 @@ running "Set yarn default package manager"
 npm install -g yarn
 ng set -g packageManager=yarn
 ok
-###
-bot ".DS_STORE file"
-###
 
-default write com.apple.desktopservices DSDontWriteNetworkStores true
-ok
+####
+#bot ".DS_STORE file"
+####
+#
+#default write com.apple.desktopservices DSDontWriteNetworkStores true
+#ok

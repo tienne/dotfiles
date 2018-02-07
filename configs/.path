@@ -1,2 +1,5 @@
 # php composer
 PATH="$PATH:$HOME/.composer/vendor/bin"
+
+# npm packages
+PATH="$PATH:$HOME/.npm-packages/bin"
