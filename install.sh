@@ -96,8 +96,8 @@ ok
 ###
 bot "font install"
 ###
-cd $DOTHOME && chmod +x ./fonts/install.sh
-./fonts/install.sh
+cd $DOTHOME && chmod +x ./font/install.sh
+./font/install.sh
 
 ###
 bot "install Mac Os Apps"
