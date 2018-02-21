@@ -49,6 +49,7 @@ while true; do
     break
   fi
 done
+cp ./configs-custom/.gitconfig ${HOME}/.gitconfig
 running "gitconfig"
 ok
 
