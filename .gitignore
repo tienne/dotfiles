@@ -13,3 +13,4 @@ Icon
 
 ## Directory-based project format:
 .idea/
+/configs-custom
