@@ -161,6 +161,7 @@ bot "Angular Development Environment setting"
 ###
 ibrew node
 ibrew yarn
+ibrew nvm
 
 running "Angular install"
 npm install -g @angular/cli
@@ -178,6 +179,12 @@ running "Set yarn default package manager"
 npm install -g yarn
 ng set -g packageManager=yarn
 ok
+
+
+###
+bot "cocoapods"
+###
+sudo gem install cocoapods
 
 ####
 #bot ".DS_STORE file"
