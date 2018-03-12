@@ -153,6 +153,16 @@ chmod +x ./kubectl
 sudo mv ./kubectl /usr/local/bin/kubectl
 
 ###
+bot "minikube"
+###
+icask minikube
+
+###
+bot "kops"
+###
+ibrew kops
+
+###
 bot "ide and dev tool"
 ###
 icask sourcetree
