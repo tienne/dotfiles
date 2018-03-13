@@ -163,6 +163,11 @@ bot "kops"
 ibrew kops
 
 ###
+bot "kompose"
+###
+ibrew kompose
+
+###
 bot "ide and dev tool"
 ###
 icask sourcetree
