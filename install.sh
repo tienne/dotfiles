@@ -148,7 +148,7 @@ icask docker-toolbox
 ###
 bot "Ansible"
 ###
-ibrew ansible
+sudo pip install ansible --quiet
 
 ###
 bot "kubernetes"
