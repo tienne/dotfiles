@@ -146,6 +146,11 @@ icask docker
 icask docker-toolbox
 
 ###
+bot "Ansible"
+###
+ibrew ansible
+
+###
 bot "kubernetes"
 ###
 curl -LO https://storage.googleapis.com/kubernetes-release/release/`curl -s https://storage.googleapis.com/kubernetes-release/release/stable.txt`/bin/darwin/amd64/kubectl
