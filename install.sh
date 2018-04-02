@@ -179,6 +179,11 @@ bot "kompose"
 ibrew kompose
 
 ###
+bot "kube-aws"
+###
+ibrew kube-aws
+
+###
 bot "ide and dev tool"
 ###
 icask sourcetree
