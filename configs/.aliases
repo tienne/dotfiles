@@ -4,3 +4,4 @@ alias tinker="php artisan tinker"
 
 #docker
 alias dc="docker-compose"
+alias kctl="kubectl"
