@@ -151,6 +151,16 @@ bot "Ansible"
 sudo pip install ansible --quiet
 
 ###
+bot "terraform"
+###
+brew install terraform
+
+###
+bot "terrforming"
+###
+gem install terraforming
+
+###
 bot "kubernetes"
 ###
 curl -LO https://storage.googleapis.com/kubernetes-release/release/`curl -s https://storage.googleapis.com/kubernetes-release/release/stable.txt`/bin/darwin/amd64/kubectl
