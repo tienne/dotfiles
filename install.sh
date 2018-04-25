@@ -127,6 +127,7 @@ ok
 bot "python install"
 ###
 ibrew python
+ibrew pyenv
 ibrew python3
 easy_install pip
 ok
