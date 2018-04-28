@@ -10,3 +10,4 @@ alias kctl="kubectl"
 
 #terraform
 alias tf="terraform"
+alias tfing="terraforming"
