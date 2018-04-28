@@ -127,6 +127,7 @@ ok
 bot "python install"
 ###
 ibrew python
+ibrew pyenv
 ibrew python3
 easy_install pip
 ok
@@ -149,6 +150,16 @@ icask docker-toolbox
 bot "Ansible"
 ###
 sudo pip install ansible --quiet
+
+###
+bot "terraform"
+###
+brew install terraform
+
+###
+bot "terrforming"
+###
+gem install terraforming
 
 ###
 bot "kubernetes"
@@ -177,6 +188,11 @@ ibrew kops
 bot "kompose"
 ###
 ibrew kompose
+
+###
+bot "kube-aws"
+###
+ibrew kube-aws
 
 ###
 bot "ide and dev tool"

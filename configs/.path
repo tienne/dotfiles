@@ -3,3 +3,7 @@ PATH="$PATH:$HOME/.composer/vendor/bin"
 
 # npm packages
 PATH="$PATH:$HOME/.npm-packages/bin"
+
+# go
+GOPATH=$HOME/go
+PATH=$PATH:$GOPATH/bin
