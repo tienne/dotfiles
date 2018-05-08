@@ -1,0 +1,19 @@
+function _completeSSHHosts {
+
+	COMPREPLY=()
+	local cur=${COMP_WORDS[COMP_CWORD]}
+
+	local completeHosts=$(
+		cat "$HOME/.ssh/config" | \
+		grep --extended-regexp --regexp "^Host +[^* ]+? *$" | \
+		tr -s " " | cut -d " " -f 2;
+		cat /etc/hosts | \
+		grep --extended-regexp --regexp "^[0-9]{3}\." | \
+		awk "{print \$2}"
+	)
+
+	COMPREPLY=($(compgen -W "$completeHosts" -- "$cur"))
+	return 0
+}
+
+complete -F _completeSSHHosts ssh

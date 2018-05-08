@@ -5,7 +5,7 @@ export TERM=xterm-256color
 
 export PS1='\[\033[01;32m\]\u@\h\[\033[00m\]:\[\033[01;34m\]\w\[\033[00m\]☕ '
 
-files=("$DOTHOME/configs/.path" "$DOTHOME/configs/.aliases");
+files=("$DOTHOME/configs/.path" "$DOTHOME/configs/.aliases", "$DOTHOME/configs/.ssh_autocomplete");
 
 for file in "${files[@]}"; do
   [ -r "$file" ] && [ -f "$file" ] && source "$file";
