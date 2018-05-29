@@ -154,12 +154,17 @@ sudo pip install ansible --quiet
 ###
 bot "terraform"
 ###
-brew install terraform
+ibrew terraform
 
 ###
 bot "terrforming"
 ###
 gem install terraforming
+
+###
+bot "packer"
+###
+ibrew packer
 
 ###
 bot "kubernetes"
