@@ -8,6 +8,11 @@ PATH="$PATH:$HOME/flutter/bin"
 # go
 GOPATH=$HOME/go
 PATH=$PATH:$GOPATH/bin
+PATH=$PATH:/usr/local/bin
+
+# flutter
+PATH=$PATH:$HOME/flutter/bin
+
 
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
