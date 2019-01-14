@@ -100,6 +100,11 @@ cd $DOTHOME && chmod +x ./font/install.sh
 ./font/install.sh
 
 ###
+bot "bash complete"
+###
+brew install bash-completion
+
+###
 bot "install Mac Os Apps"
 ###
 icask google-chrome
