@@ -21,6 +21,7 @@ fi
 
 source "$DOTHOME/configs/bash_helper";
 source "$DOTHOME/configs/.k8s_autocomplete";
+source "$DOTHOME/configs/.eks_autocomplete";
 
 export PS1="\[\033[01;32m\]\u@\h\[\033[00m\]:\[\033[01;34m\]\w\[\033[00m\]\$(parse_git_branch)\n\[\033[0m\033[0;32m\]└─ \$\[\033[0m\033[0;32m\]\[\033[0m\] "
 

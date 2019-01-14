@@ -185,6 +185,11 @@ sudo curl -o /usr/local/bin/ecs-cli https://s3.amazonaws.com/amazon-ecs-cli/ecs-
 sudo chmod +x /usr/local/bin/ecs-cli
 
 ###
+bot "eksctl"
+###
+ibrew weaveworks/tap/eksctl
+
+###
 bot "minikube"
 ###
 icask minikube
